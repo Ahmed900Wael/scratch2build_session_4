@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity Portal | CSS Layout Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="portal">
+    <aside class="sidebar">
+      <h1 class="brand">Activity Portal</h1>
+      <nav aria-label="Portal navigation">
+        <a class="active" href="#overview">Overview</a>
+        <a href="#programs">Programs</a>
+        <a href="#tasks">My Tasks</a>
+        <a href="#updates">Updates</a>
+      </nav>
+    </aside>
+
+    <main class="content" id="overview">
+      <header class="header">
+        <div>
+          <p class="eyebrow">STUDENT WORKSPACE</p>
+          <h2>Welcome back!</h2>
+        </div>
+        <button class="profile-button" type="button">My Profile</button>
+      </header>
+
+      <section class="intro">
+        <h2>Your activity at a glance</h2>
+        <p>Use Flexbox, CSS Grid, and responsive CSS to style this portal.</p>
+      </section>
+
+      <section class="card-grid" id="programs" aria-label="Program summary cards">
+        <article class="card"><p class="card-kicker">PROGRAMS</p><h3>My Programs</h3><p>Explore your active learning tracks.</p></article>
+        <article class="card" id="tasks"><p class="card-kicker">TASKS</p><h3>Weekly Tasks</h3><p>Keep track of your current deliverables.</p></article>
+        <article class="card"><p class="card-kicker">PROGRESS</p><h3>Learning Progress</h3><p>Review recent milestones and goals.</p></article>
+      </section>
+
+      <section class="updates" id="updates">
+        <h2>Latest updates</h2>
+        <ul>
+          <li><strong>Week 2 is live</strong><span>Focus: CSS layout and responsive design.</span></li>
+          <li><strong>Workshop reminder</strong><span>Push your styling branch and open a PR.</span></li>
+          <li><strong>Need help?</strong><span>Use DevTools, MDN, then ask your Pod Lead.</span></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
