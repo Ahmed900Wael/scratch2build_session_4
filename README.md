@@ -6,8 +6,8 @@ In Tuesday's offline workshop, you will style a simple Student Activity Portal u
 
 ## Files
 
-- `index.html` — the portal's HTML structure.
-- `styles.css` — add your CSS here. It is already linked from `index.html`.
+* `index.html` — the portal's HTML structure.
+* `styles.css` — add your CSS here. It is already linked from `index.html`.
 
 ## What to do
 
@@ -20,9 +20,26 @@ In Tuesday's offline workshop, you will style a simple Student Activity Portal u
 7. Test your work in the browser and with Chrome DevTools.
 8. Commit and push your work, then open a Pull Request targeting `main` before leaving the workshop, following the facilitator's instructions.
 
-## Branch name
+## How to submit your work
 
-Use your name in the branch name:
+### 1. Fork the repository
+
+Click the **Fork** button on GitHub to create your own copy of this repository.
+
+### 2. Clone your fork
+
+Copy the URL of your fork, then run:
+
+```bash
+git clone <YOUR_FORK_URL>
+cd scratch2build-css-layout-lab
+```
+
+Replace `<YOUR_FORK_URL>` with the URL of your own fork.
+
+### 3. Create your branch
+
+Create a branch using your name:
 
 ```bash
 git checkout main
@@ -30,9 +47,15 @@ git pull origin main
 git checkout -b feature/yourname-responsive-ui
 ```
 
-Replace `yourname` with your own name, using lowercase and hyphens if needed.
+Replace `yourname` with your own name, using lowercase letters and hyphens if needed.
 
-## Save and push your work
+### 4. Complete the task
+
+Edit `index.html` and `styles.css`.
+
+Use Flexbox and CSS Grid to arrange the page elements. Check your work in the browser and make sure the page works on smaller screens without horizontal scrolling.
+
+### 5. Commit and push your changes
 
 ```bash
 git add index.html styles.css
@@ -40,7 +63,19 @@ git commit -m "Style responsive activity portal"
 git push -u origin feature/yourname-responsive-ui
 ```
 
-Then open a Pull Request from your branch into `main` and briefly explain what you changed.
+### 6. Open a Pull Request
+
+On GitHub, open a Pull Request from your fork's `feature/yourname-responsive-ui` branch to the original repository's `main` branch.
+
+Make sure the base repository is:
+
+`FCAI-E-Club-Tech-Committee/scratch2build-css-layout-lab`
+
+Use the Pull Request template and briefly explain what you changed.
+
+### 7. Review feedback
+
+If a reviewer requests changes, update your code and push the changes to the same branch. Your existing Pull Request will include the new commits.
 
 ## Extra challenge (if you finish early)
 
@@ -49,5 +84,3 @@ Define a few CSS variables inside `:root` and use `var(--...)` to reuse colors i
 ## Getting help
 
 Try Chrome DevTools first, check the relevant MDN documentation, and then ask your Pod Lead. Mentors can guide you with questions, but they should not type code on your machine.
-
-> Repository name: confirm the final name with the activity lead before publishing. This name is a suggested one because the Week 2 overview does not specify the lab repository's exact name.
