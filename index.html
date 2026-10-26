@@ -1,12 +1,128 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Activity Portal | CSS Layout Lab</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Write your code here -->
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors, Typography & Color Masterclass</title>
+
+    <!-- Google Fonts Import (Inter & Fira Code) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Main Container -->
+    <main style="max-width: 800px; margin: 0 auto">
+      <!-- Header Section -->
+      <header id="main-header" class="card user-profile">
+        <span class="badge" data-status="active">System Online</span>
+        <h1 style="margin-top: 0.75rem">Ahmed Wael</h1>
+        <p>Technical Team Lead & Full-Stack Developer</p>
+        <span>Cairo, Egypt • Faculty of Computers and AI</span>
+      </header>
+
+      <!-- Bio Section -->
+      <section class="card bio-section">
+        <h2>About Developer</h2>
+        <p class="featured-text">
+          Building high-performance web applications using Modern Layout
+          Engines, custom engineering toolkits, and fluid user interfaces.
+          Dedicated to clean architecture and scalable systems.
+        </p>
+      </section>
+
+      <!-- Tech Stack & Skills -->
+      <section class="card">
+        <h2>Technical Competencies</h2>
+        <p>Core development stack and execution tools:</p>
+        <ul
+          class="skills-list"
+          style="list-style-position: inside; margin-top: 0.75rem"
+        >
+          <li>C++ System Simulations & Standard Template Library (STL)</li>
+          <li>TypeScript, Next.js App Router, Tailwind CSS</li>
+          <li>Supabase Authentication & Relational Database Design</li>
+          <li>CSS Grid Architecture & Flexbox Layout Mechanics</li>
+        </ul>
+      </section>
+
+      <!-- Activity Tracker -->
+      <section class="card">
+        <h3>Active Sprint Status</h3>
+        <small>Updated 2 hours ago via GitHub Workflow.</small>
+        <div style="margin-top: 1rem">
+          <p>
+            Current Task:
+            <code class="code-text">refactor(ui): apply fluid typography</code>
+          </p>
+          <span class="badge" data-status="pending" style="margin-top: 0.5rem"
+            >In Review</span
+          >
+        </div>
+      </section>
+
+      <!-- Interactive Form -->
+      <section class="card">
+        <h2>Quick Inquiry Form</h2>
+        <form style="margin-top: 1rem">
+          <div style="margin-bottom: 1rem">
+            <label
+              for="username"
+              style="
+                display: block;
+                margin-bottom: 0.25rem;
+                font-size: 0.875rem;
+              "
+              >Your Name:</label
+            >
+            <input
+              type="text"
+              id="username"
+              placeholder="e.g., Jane Doe"
+              style="
+                width: 100%;
+                padding: 0.5rem;
+                background: #0f172a;
+                border: 1px solid #334155;
+                color: white;
+                border-radius: 4px;
+              "
+            />
+          </div>
+
+          <div style="margin-bottom: 1rem">
+            <label
+              for="comments"
+              style="
+                display: block;
+                margin-bottom: 0.25rem;
+                font-size: 0.875rem;
+              "
+              >Notes / Feedback:</label
+            >
+            <textarea
+              id="comments"
+              rows="3"
+              placeholder="Type your message..."
+              style="
+                width: 100%;
+                padding: 0.5rem;
+                background: #0f172a;
+                border: 1px solid #334155;
+                color: white;
+                border-radius: 4px;
+              "
+            ></textarea>
+          </div>
+
+          <button type="button" class="btn btn-primary">
+            Submit Observation
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
